@@ -1,9 +1,38 @@
 # Vehicle-Maintenance-Need-Predictor
 
 > **Project Objective**
->
-> Predict whether a vehicle **needs maintenance** based on a set of 20 technical and historical indicators. The original dataset contains **5,000 rows × 20 columns**.
+>The goal is to predict **`Need_Maintenance`**—a binary flag that indicates whether a vehicle currently requires maintenance (`1 = >Yes`, `0 = No`). The original dataset contains **5,000 rows × 20 columns**
 
+---
+## Dataset Overview
+
+The dataset records **vehicle condition, usage, and ownership details** for a fleet of mixed vehicle types.  
+
+
+### Feature Dictionary
+
+| Feature | Type | Description |
+|---------|------|-------------|
+| `Vehicle_Model` | Categorical | Type of vehicle (Car, SUV, Van, Truck, Bus, Motorcycle). |
+| `Mileage` | Numeric | Total distance travelled (km). |
+| `Maintenance_History` | Ordinal | Historical service quality (Good > Average > Poor). |
+| `Reported_Issues` | Numeric | Count of issues reported by drivers or diagnostics. |
+| `Vehicle_Age` | Numeric | Vehicle age (years). |
+| `Fuel_Type` | Categorical | Primary fuel (Diesel, Petrol, Electric). |
+| `Transmission_Type` | Categorical | Gearbox type (Automatic, Manual). |
+| `Engine_Size` | Numeric | Engine displacement (cc). |
+| `Odometer_Reading` | Numeric | Current odometer reading (km). |
+| `Last_Service_Date` | Date | Date of the last completed service. |
+| `Warranty_Expiry_Date` | Date | Warranty end date. |
+| `Owner_Type` | Categorical | Ownership history (First, Second, Third owner). |
+| `Insurance_Premium` | Numeric | Annual insurance premium (monetary unit). |
+| `Service_History` | Numeric | Number of scheduled services performed. |
+| `Accident_History` | Numeric | Count of recorded accidents. |
+| `Fuel_Efficiency` | Numeric | Fuel economy (km per liter). |
+| `Tire_Condition` | Ordinal | Tire state (New > Good > Worn Out). |
+| `Brake_Condition` | Ordinal | Brake state (New > Good > Worn Out). |
+| `Battery_Status` | Ordinal | Battery health (New > Good > Weak). |
+| `Need_Maintenance` | **Target** | Binary label—`1` if maintenance is required, `0` otherwise. |
 ---
 
 ## 1  Data Preparation
@@ -47,6 +76,7 @@ The plot highlights both positive (corr > 0) and negative (corr < 0) associa
   * Early years: high maintenance probability, likely due to recalls/defects.
   * Middle years: dip followed by an increase caused by wear‑and‑tear.
   * Older than ≈ 10 years: slight decrease; very old cars in the dataset appear mechanically resilient.
+
 ![1000171364](https://github.com/user-attachments/assets/0544b79f-63a0-4959-801c-946eb3f82ec5)
 
 
