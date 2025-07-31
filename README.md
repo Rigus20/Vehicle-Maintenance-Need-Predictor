@@ -1,7 +1,7 @@
 # Vehicle-Maintenance-Need-Predictor
 
 > **Project Objective**
->The goal is to predict **`Need_Maintenance`**—a binary flag that indicates whether a vehicle currently requires maintenance (`1 = >Yes`, `0 = No`). The original dataset contains **5,000 rows × 20 columns**
+>The goal is to predict **`Need_Maintenance`**—a binary flag that indicates whether a vehicle currently requires maintenance (`1 = Yes`, `0 = No`). The original dataset contains **5,000 rows × 20 columns**
 
 ---
 ## Dataset Overview
@@ -141,11 +141,11 @@ An odds ratio (OR) expresses how the *odds* of the vehicle needing maintenance c
 ## 6  Model Evaluation
 
 * **Binned residuals plot** — Good overall fit; minor tails remain.
-  <img width="1003" height="620" alt="image" src="https://github.com/user-attachments/assets/b5de8d2f-1224-4cc0-8f6d-44fd5519b94d" />
+<img width="1003" height="620" alt="image" src="https://github.com/user-attachments/assets/b5de8d2f-1224-4cc0-8f6d-44fd5519b94d" />
 
 * **Hosmer–Lemeshow test** — p‑value = 0.3482 → model is not rejected.
 * **ROC curve** — AUC = 0.9409 → excellent discrimination.
-  <img width="1003" height="620" alt="image" src="https://github.com/user-attachments/assets/4e78ec51-daf9-4930-9599-6ddcd0cc31a5" />
+<img width="1003" height="620" alt="image" src="https://github.com/user-attachments/assets/4e78ec51-daf9-4930-9599-6ddcd0cc31a5" />
 
 
 ---
