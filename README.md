@@ -69,7 +69,7 @@ The plot highlights both positive (corr > 0) and negative (corr < 0) associa
 ### 3.2  Key Covariate Trends
 
 * **Reported\_Issues vs Need\_Maintenance**  — A clear upward trend: more reported issues → higher probability of maintenance.
-  <img width="1003" height="620" alt="image" src="https://github.com/user-attachments/assets/94b9098f-015e-4bfb-97c2-95cd663d253d" />
+<img width="1003" height="620" alt="image" src="https://github.com/user-attachments/assets/94b9098f-015e-4bfb-97c2-95cd663d253d" />
 
 * **Vehicle\_Age vs Need\_Maintenance**
 
