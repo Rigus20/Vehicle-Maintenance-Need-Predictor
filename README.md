@@ -15,7 +15,7 @@
 
 ## 2  Model Building
 
-1. **Manual pruning** using `summary(g)` and **BIC**.
+1. **Manual covariate pruning** guided by BIC - this sub-step proved ineffective in practice.
 2. **Bidirectional stepwise selection** based on **AIC**.
 
 The optimal model (AIC = 632.92) retains:
@@ -47,7 +47,8 @@ The plot highlights both positive (corr > 0) and negative (corr < 0) associa
   * Early years: high maintenance probability, likely due to recalls/defects.
   * Middle years: dip followed by an increase caused by wear‑and‑tear.
   * Older than ≈ 10 years: slight decrease; very old cars in the dataset appear mechanically resilient.
-    <img width="1003" height="620" alt="image" src="https://github.com/user-attachments/assets/5c7c7b27-d703-4f01-a36f-b4cc63429abb" />
+![1000171364](https://github.com/user-attachments/assets/0544b79f-63a0-4959-801c-946eb3f82ec5)
+
 
 * **Accident\_History vs Need\_Maintenance**  — Fairly flat until a slight rise at 3 accidents; beyond that the vehicle is usually written off, so no further data are collected.
 <img width="1003" height="620" alt="image" src="https://github.com/user-attachments/assets/916e699f-1879-4a19-9c48-63e89fdc0a25" />
